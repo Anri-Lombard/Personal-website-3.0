@@ -4,7 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.sass']
+  styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
 

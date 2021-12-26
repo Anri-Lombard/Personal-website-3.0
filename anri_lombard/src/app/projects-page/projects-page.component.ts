@@ -4,7 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-projects-page',
   templateUrl: './projects-page.component.html',
-  styleUrls: ['./projects-page.component.sass']
+  styleUrls: ['./projects-page.component.scss']
 })
 export class ProjectsPageComponent implements OnInit {
 
