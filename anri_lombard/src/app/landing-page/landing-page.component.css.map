@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,EAAE,EAAE,EAAE,CAAC;EACL,KAAK,EAAE,IAAI;CACZ",
+    "mappings": "",
     "sources": [
         "landing-page.component.scss"
     ],

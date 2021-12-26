@@ -1,1 +1,5 @@
-
+@use '../scss/abstracts/custom_variables' as cv;
+a {
+  text-decoration: none;
+  color: cv.$secondary;
+}
