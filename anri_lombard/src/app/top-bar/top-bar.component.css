@@ -1,0 +1,25 @@
+.search-button {
+  border-color: skyblue;
+  color: blue;
+}
+
+.search-button:hover, .search-button:after, .search-button:focus {
+  background-color: transparent;
+  color: brown;
+}
+
+.brand-custom:hover, .brand-custom:focus, .brand-custom:active {
+  background-color: transparent;
+  color: brown;
+}
+
+.login-custom:hover, .login-custom:focus, .login-custom:active {
+  background-color: transparent;
+  color: brown !important;
+}
+
+.register-custom:hover, .register-custom:focus, .register-custom:active {
+  background-color: transparent;
+  color: brown !important;
+}
+/*# sourceMappingURL=top-bar.component.css.map */
