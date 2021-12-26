@@ -6,3 +6,7 @@ $navbar-padding-x:                  $spacer * 2;
 .navbar {
   padding: $navbar-padding-y $navbar-padding-x;
 }
+
+.bg-custom {
+  background-color: $blue-500;
+}
