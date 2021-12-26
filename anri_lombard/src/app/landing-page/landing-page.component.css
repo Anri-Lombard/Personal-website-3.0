@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=landing-page.component.css.map */
+@use '../scss/components/layout' as layout;
+/*# sourceMappingURL=landing-page.component.css.map */

@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=blogs-page.component.css.map */
+@use '../scss/components/layout' as layout;
+/*# sourceMappingURL=blogs-page.component.css.map */
