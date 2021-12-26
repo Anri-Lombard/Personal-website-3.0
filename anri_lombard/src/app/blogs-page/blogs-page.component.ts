@@ -2,22 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-about-page',
-  templateUrl: './about-page.component.html',
-  styleUrls: ['./about-page.component.sass']
+  selector: 'app-blogs-page',
+  templateUrl: './blogs-page.component.html',
+  styleUrls: ['./blogs-page.component.sass']
 })
-export class AboutPageComponent implements OnInit {
+export class BlogsPageComponent implements OnInit {
 
   constructor(
     private meta: Meta,
     private title: Title,
   ) {
     this.meta.addTags([
-      {name: 'description', content: 'About Anri Lombard'},
+      {name: 'description', content: 'The blog of Anri Lombard'},
       {name: 'author', content: 'Anri Lombard'},
-      {name: 'keywords', content: 'Anri Lombard, about, experience'}
+      {name: 'keywords', content: 'Anri Lombard, blog'}
     ]);
-    this.setTitle('Home Page')
+    this.setTitle('Blogs')
   }
   public setTitle(newTitle: string) {
     this.title.setTitle(newTitle);
