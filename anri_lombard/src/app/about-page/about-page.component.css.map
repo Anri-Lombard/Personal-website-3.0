@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "about-page.component.sass"
+        "about-page.component.scss"
     ],
     "names": [],
     "file": "about-page.component.css"

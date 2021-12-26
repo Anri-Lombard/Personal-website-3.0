@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "app.component.sass"
+        "app.component.scss"
     ],
     "names": [],
     "file": "app.component.css"

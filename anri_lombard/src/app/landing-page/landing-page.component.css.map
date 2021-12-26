@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,EAAE,EAAE,EAAE,CAAC;EACL,KAAK,EAAE,IAAI;CACZ",
     "sources": [
-        "landing-page.component.sass"
+        "landing-page.component.scss"
     ],
     "names": [],
     "file": "landing-page.component.css"

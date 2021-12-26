@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAAA,IAAI,CAAJ,6BAAI",
+    "mappings": "",
     "sources": [
-        "top-bar.component.sass"
+        "top-bar.component.scss"
     ],
     "names": [],
     "file": "top-bar.component.css"
