@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,IAAI;CACZ",
+    "mappings": "AAAA,IAAI,CAAJ,0CAAI",
     "sources": [
         "top-bar.component.scss"
     ],

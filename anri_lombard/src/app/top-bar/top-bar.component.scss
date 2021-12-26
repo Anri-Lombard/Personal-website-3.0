@@ -1,5 +1,8 @@
-@use '../scss/abstracts/custom_variables' as cv;
-a {
-  text-decoration: none;
-  color: cv.$secondary;
+@use '../scss/abstracts/custom_variables' as *;
+
+$navbar-padding-y:                  $spacer * 0.5;
+$navbar-padding-x:                  $spacer * 2;
+
+.navbar {
+  padding: $navbar-padding-y $navbar-padding-x;
 }
