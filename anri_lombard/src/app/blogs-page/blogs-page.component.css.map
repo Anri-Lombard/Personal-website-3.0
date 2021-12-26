@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,IAAI,CAAJ,qCAAI",
+    "mappings": "AAAA,IAAI,CAAJ,qCAAI;AAEJ,AAAA,IAAI,CAAC;EACH,QAAQ,EAAE,QAAQ;CACnB",
     "sources": [
         "blogs-page.component.scss"
     ],

@@ -1,2 +1,11 @@
 @use '../scss/abstracts/custom_variables' as *;
 @use '../scss/components/layout' as layout;
+
+.custom-header {
+  color: $blue-900;
+  transition: 0.5s;
+
+  &:hover {
+    color: $blue-600;
+  }
+}

@@ -4,3 +4,12 @@
   @include make-container(2.5rem);
   padding-top: 2rem;
 }
+
+.custom-header {
+  color: $blue-900;
+  transition: 0.5s;
+
+  &:hover {
+    color: $blue-600;
+  }
+}
