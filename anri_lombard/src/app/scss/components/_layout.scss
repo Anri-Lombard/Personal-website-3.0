@@ -12,4 +12,9 @@
   &:hover {
     color: $blue-600;
   }
+
+  &-main:hover {
+    transition: 3s;
+    scale: 1.2;
+  }
 }
