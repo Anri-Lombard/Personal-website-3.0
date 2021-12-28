@@ -2,8 +2,4 @@
 /* Importing Bootstrap SCSS file. */
 @forward '~bootstrap/scss/bootstrap';
 @use '~bootstrap/scss/bootstrap' as *;
-* {
-  font-family: 'Licorice', cursive;
-  font-size: large;
-}
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import * as THREE from 'three';
 
 @Component({
   selector: 'app-landing-page',

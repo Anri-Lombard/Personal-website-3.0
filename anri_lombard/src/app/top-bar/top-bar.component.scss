@@ -5,6 +5,10 @@ $navbar-padding-x:                  $spacer * 2;
 
 .navbar {
   padding: $navbar-padding-y $navbar-padding-x;
+
+  &-brand {
+    font-family: 'Licorice', cursive;
+  }
 }
 
 .bg-custom {
