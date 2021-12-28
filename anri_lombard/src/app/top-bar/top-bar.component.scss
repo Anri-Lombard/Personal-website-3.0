@@ -1,13 +1,14 @@
 @use '../scss/abstracts/custom_variables' as *;
 
-$navbar-padding-y:                  $spacer * 0.5;
-$navbar-padding-x:                  $spacer * 2;
+$navbar-padding-y:                  $spacer * 1;
+$navbar-padding-x:                  $spacer * 3;
 
 .navbar {
   padding: $navbar-padding-y $navbar-padding-x;
 
   &-brand {
     font-family: 'Licorice', cursive;
+    font-size: 2rem;
   }
 }
 

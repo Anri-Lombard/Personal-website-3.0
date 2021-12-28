@@ -1,7 +1,7 @@
 @use '../abstracts/custom_variables' as *;
 
 .custom-container {
-  @include make-container(2.5rem);
+  @include make-container(4rem);
   padding-top: 2rem;
 }
 
