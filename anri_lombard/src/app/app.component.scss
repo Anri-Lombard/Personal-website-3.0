@@ -1,4 +1,11 @@
-
-#particles-js {
-  height: 100vh;
+#particles-js{
+	background: #1a222c;
+  display: flex;
+  vertical-align: bottom;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
 }
+
+

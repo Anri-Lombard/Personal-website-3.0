@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ParticlesConfig } from './particles-config';
+import { Router } from '@angular/router';
 
-declare let particlesJS: any; // Required to be properly interpreted by TypeScript.
-
+declare var particlesJS: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,11 +9,25 @@ declare let particlesJS: any; // Required to be properly interpreted by TypeScri
 })
 export class AppComponent implements OnInit {
   title = 'anri_lombard';
-  public ngOnInit(): void {
-    this.invokeParticles();
+
+  ngOnInit() {
+    particlesJS.load('particles-js', '../assets/particles.json', null);
   }
 
-  public invokeParticles(): void {
-    particlesJS('particles-js', ParticlesConfig, function() {});
+  constructor(private router: Router) {
+
   }
+
+  /**
+   * Check if the router url contains the specified route
+   *
+   * @param {string} route
+   * @returns
+   * @memberof MyComponent
+   */
+   hasRoute(route: string) {
+    return this.router.url.includes(route);
+  }
+
+
 }

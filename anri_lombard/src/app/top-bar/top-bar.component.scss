@@ -5,6 +5,11 @@ $navbar-padding-x:                  $spacer * 3;
 
 .navbar {
   padding: $navbar-padding-y $navbar-padding-x;
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  // left: 0;
+
 
   &-brand {
     font-family: 'Licorice', cursive;

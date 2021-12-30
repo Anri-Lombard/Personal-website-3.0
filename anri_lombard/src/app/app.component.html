@@ -7,6 +7,11 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-top-bar></app-top-bar>
-<div id="particles-js"></div>
-<router-outlet></router-outlet>
+<div id="particles-js" *ngIf="!hasRoute('about')">
+</div>
+<div id="top-bar">
+  <app-top-bar></app-top-bar>
+</div>
+<div class="component-wrapper">
+    <router-outlet></router-outlet>
+</div>
