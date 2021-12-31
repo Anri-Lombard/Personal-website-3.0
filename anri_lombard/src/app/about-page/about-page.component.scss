@@ -9,3 +9,12 @@
     color: $blue-600;
   }
 }
+
+.paragraph {
+  margin-left: 1rem;
+  transition: .5s ease-in-out;
+
+  &:hover {
+    margin-left: 3rem;
+  }
+}

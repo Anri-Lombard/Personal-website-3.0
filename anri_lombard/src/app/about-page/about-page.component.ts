@@ -8,22 +8,24 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class AboutPageComponent implements OnInit {
 
+  real = false;
+
   constructor(
     private meta: Meta,
     private title: Title,
-  ) {
-    this.meta.addTags([
-      {name: 'description', content: 'About Anri Lombard'},
-      {name: 'author', content: 'Anri Lombard'},
-      {name: 'keywords', content: 'Anri Lombard, about, experience'}
-    ]);
-    this.setTitle('About Page')
-  }
-  public setTitle(newTitle: string) {
-    this.title.setTitle(newTitle);
-  }
+    ) {
+      this.meta.addTags([
+        {name: 'description', content: 'About Anri Lombard'},
+        {name: 'author', content: 'Anri Lombard'},
+        {name: 'keywords', content: 'Anri Lombard, about, experience'}
+      ]);
+      this.setTitle('About Page')
+    }
+    public setTitle(newTitle: string) {
+      this.title.setTitle(newTitle);
+    }
 
-  ngOnInit(): void {
+    ngOnInit(): void {
   }
 
 }

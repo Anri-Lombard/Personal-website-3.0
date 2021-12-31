@@ -1,4 +1,12 @@
 #particles-js {
-  height: 100vh;
+  background: #1a222c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: bottom;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=app.component.css.map */
