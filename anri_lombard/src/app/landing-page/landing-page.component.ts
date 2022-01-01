@@ -28,8 +28,18 @@ export class LandingPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // TODO: add these gotos to a cart for the entire website to use
+
   gotoAbout() {
     this.router.navigate(['/about']);
+  }
+
+  gotoProjects() {
+    this.router.navigate(['/projects'])
+  }
+
+  gotoBlogs() {
+    this.router.navigate(['/blogs'])
   }
 
 
