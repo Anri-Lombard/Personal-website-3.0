@@ -1,2 +1,11 @@
 @use '../scss/components/layout' as layout;
+@use '../scss//abstracts/custom_variables' as *;
 
+.project {
+  background-color: $primary;
+  color: $white;
+
+  &-content {
+    padding: 1rem;
+  }
+}

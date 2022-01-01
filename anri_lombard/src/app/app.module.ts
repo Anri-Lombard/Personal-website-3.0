@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { BlogExpandedComponent } from './blog-expanded/blog-expanded.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BlogExpandedComponent } from './blog-expanded/blog-expanded.component';
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { projects } from '../project';
 
 @Component({
   selector: 'app-projects-page',
@@ -8,10 +9,13 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class ProjectsPageComponent implements OnInit {
 
+  projects = projects;
+
   constructor(
     private meta: Meta,
     private title: Title,
   ) {
+
     this.meta.addTags([
       {name: 'description', content: 'The projects of Anri Lombard'},
       {name: 'author', content: 'Anri Lombard'},
