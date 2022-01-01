@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -11,6 +12,7 @@ export class LandingPageComponent implements OnInit {
   constructor(
     private meta: Meta,
     private title: Title,
+    private router: Router,
   ) {
     this.meta.addTags([
       {name: 'description', content: 'The personal website of Anri Lombard'},
@@ -24,6 +26,10 @@ export class LandingPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  gotoAbout() {
+    this.router.navigate(['/about']);
   }
 
 

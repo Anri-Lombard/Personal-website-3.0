@@ -18,3 +18,46 @@
     scale: 1.2;
   }
 }
+
+.custom-header {
+  color: $blue-900;
+  transition: 0.5s;
+
+  &:hover {
+    color: $blue-600;
+  }
+}
+
+.paragraph {
+  margin-left: 1rem;
+  transition: .5s ease-in-out;
+
+  &:hover {
+    margin-left: 3rem;
+  }
+}
+
+.sub-heading {
+  margin-left: 0.5rem;
+}
+
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
