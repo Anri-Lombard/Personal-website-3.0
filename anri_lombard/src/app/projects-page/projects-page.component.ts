@@ -4,6 +4,7 @@ import projectsJson from '../../assets/projects.json';
 
 interface IProject {
   id: number;
+  type: string;
   title: string;
   imagePath: string;
   date: string;

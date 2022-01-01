@@ -4,7 +4,7 @@
     <h3 class="custom-header">Web/App development</h3>
 
     <div *ngFor="let pr of Projects">
-      <div class="project">
+      <div *ngIf="pr.type === 'WA'" class="project mt-2">
         <div class="project-content container">
           <h5>{{pr.title}}</h5>
           <div class="row">
@@ -14,7 +14,7 @@
             <div class="col">
               <strong>Date:</strong> {{pr.date}}<br>
               <hr class="dotted">
-              <strong>Project Summary:</strong> {{pr.projectSummary}}.<br>
+              <strong>Project Summary:</strong> {{pr.projectSummary}}<br>
               <hr class="dotted">
               <strong>Skill Summary: </strong> {{pr.skillSummary}} <br>
               <!-- <hr class="dotted"> -->
@@ -24,13 +24,10 @@
           </div>
         </div>
       </div>
-
-      <hr class="dashed">
     </div>
 
 
   </div>
-
 
   <hr class="solid">
 
@@ -38,7 +35,7 @@
     <h3 class="custom-header">Game development</h3>
 
     <div *ngFor="let pr of Projects">
-      <div class="project">
+      <div *ngIf="pr.type === 'GD'" class="project mt-2">
         <div class="project-content container">
           <h5>{{pr.title}}</h5>
           <div class="row">
@@ -59,16 +56,17 @@
         </div>
       </div>
 
-      <hr class="dashed">
     </div>
 
   </div>
+
+  <hr class="solid">
 
   <div>
     <h3 class="custom-header">Machine learning</h3>
 
     <div *ngFor="let pr of Projects">
-      <div class="project">
+      <div *ngIf="pr.type === 'ML'" class="project mt-2">
         <div class="project-content container">
           <h5>{{pr.title}}</h5>
           <div class="row">
@@ -88,8 +86,6 @@
           </div>
         </div>
       </div>
-
-      <hr class="dashed">
     </div>
   </div>
 </div>

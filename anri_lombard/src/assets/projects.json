@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "type": "WA",
     "title": "Website with Blog",
     "imagePath": "hello",
     "date": "January 2022",
@@ -9,10 +10,119 @@
   },
   {
     "id": 2,
+    "type": "WA",
     "title": "Website with Animations",
     "imagePath": "hello",
     "date": "April 2021",
     "projectSummary": "A personal website with the core purpose of being visually appealing and fun to scroll through.",
     "skillSummary": "React framework, SCSS, UX/UI Design"
+  },
+  {
+    "id": 3,
+    "type": "WA",
+    "title": "Habit Reinforcing App",
+    "imagePath": "hello",
+    "date": "April 2021",
+    "projectSummary": "An animation-filled storyline-type app built alongside a hackathon team of 4 memebers (with one coder: Anri).",
+    "skillSummary": "Vue framework, SCSS, UX/UI Design, Teamwork, Firebase"
+  },
+  {
+    "id": 4,
+    "type": "WA",
+    "title": "First Basic Website",
+    "imagePath":"hello",
+    "date": "January 2021",
+    "projectSummary": "The first personal website with basic CSS and HTML.",
+    "skillSummary": "HTML, CSS"
+  },
+  {
+    "id": 5,
+    "type": "GD",
+    "title": "Rocket Game (BOOST)",
+    "imagePath": "hello",
+    "date":"January 2021",
+    "projectSummary": "A basic rocket game to reach the glowing platform through obstacles in the dark.",
+    "skillSummary": "Unity Game Engine, Game Design, Game Theory, C#"
+  },
+  {
+    "id": 6,
+    "type": "GD",
+    "title": "Brick-breaker Game (Hulk Smash)",
+    "imagePath": "hello",
+    "date": "January 2021",
+    "projectSummary": "A mash-up of the classic brick-breaker game, where Hulk (the player) breaks all the blocks and has an endstage of blocks arranged as Loci.",
+    "skillSummary": "Unity Game Engine, Game Design, Game Theory, C#"
+  },
+  {
+    "id": 7,
+    "type": "WA",
+    "title": "Dating Application for Dogs (TinDog)",
+    "imagePath": "hello",
+    "date": "December 2020",
+    "projectSummary": "A single-page web application designed to learn about landing page layout and web-technologies.",
+    "skillSummary": "CSS, HTML, Javascript, Figma"
+  },
+  {
+    "id": 8,
+    "type": "ML",
+    "title": "Planar Data Classification DNN",
+    "imagePath": "hello",
+    "date": "Novemeber 2021",
+    "projectSummary": "First Self-Implemented one-layered Deep Neural Network to classify planar data.",
+    "skillSummary": "Neural Networks, Gradient Descent, Forward Propogation, Backward Propogation, different layers, different activations"
+  },
+  {
+    "id": 9,
+    "type": "ML",
+    "title": "Art Generation with Neural Style Transfer",
+    "imagePath": "hello",
+    "date": "Novemeber 2021",
+    "projectSummary": "DNN that generates novel images from classic art and random pictures.",
+    "skillSummary": "Deep Neural Networks, Optimization techniques, different cost functions"
+  },
+  {
+    "id": 10,
+    "type": "ML",
+    "title": "Autonomous Driving System",
+    "imagePath": "hello",
+    "date": "Novemeber 2021",
+    "projectSummary": "DNN that implements the You Only Look Once (YOLO) algorithm so cameras could assist autonomous vehicles with windowing images",
+    "skillSummary": "Neural Networks, YOLO algorithm"
+  },
+  {
+    "id": 11,
+    "type": "ML",
+    "title": "Facial Recognition System",
+    "imagePath": "hello",
+    "date": "Novemeber 2021",
+    "projectSummary": "Facial Recognition System built with ideas from FaceNet and DeepFake.",
+    "skillSummary": "Neural Networks, FaceNet, DeepFake"
+  },
+  {
+    "id": 12,
+    "type": "ML",
+    "title": "Alpacha Classifier",
+    "imagePath": "hello",
+    "date": "Novemeber 2021",
+    "projectSummary": "A neural network to classify Alpachas through transfer learning (using a pretrained model and adding a classifier).",
+    "skillSummary": "Neural Networks, Transfer Learning"
+  },
+  {
+    "id": 13,
+    "type": "ML",
+    "title": "Handwritten Number Detector and Generator",
+    "imagePath": "hello",
+    "date": "December 2021",
+    "projectSummary": "A General Adverserial Network that detects handwritten numbers and tries to generate it after enough training.",
+    "skillSummary": "GANS, Generators, Discriminators"
+  },
+  {
+    "id": 14,
+    "type": "ML",
+    "title": "Data Augmentation Generator",
+    "imagePath": "hello",
+    "date": "December 2021",
+    "projectSummary": "A General Adverserial Network that augments data for a larger dataset and improved training accuracy. It is most useful if more data is hard to get.",
+    "skillSummary": "GANS, Data Augmentation"
   }
 ]
