@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlogsPageComponent } from './blogs-page/blogs-page.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { BlogExpandedComponent } from './blog-expanded/blog-expanded.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,14 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     ProjectDetailsComponent,
     BlogExpandedComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

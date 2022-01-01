@@ -1,6 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { projects } from '../project';
+import projectsJson from '../../assets/projects.json';
+
+interface IProject {
+  id: number;
+  title: string;
+  imagePath: string;
+  date: string;
+  projectSummary: string;
+  skillSummary: string;
+}
 
 @Component({
   selector: 'app-projects-page',
@@ -9,12 +18,14 @@ import { projects } from '../project';
 })
 export class ProjectsPageComponent implements OnInit {
 
-  projects = projects;
+  Projects: IProject[] = projectsJson;
+  bullocks = false;
 
   constructor(
     private meta: Meta,
     private title: Title,
   ) {
+    console.log(this.Projects);
 
     this.meta.addTags([
       {name: 'description', content: 'The projects of Anri Lombard'},

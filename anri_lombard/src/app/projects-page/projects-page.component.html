@@ -1,61 +1,34 @@
-<!-- TODO: create an ngfor, for all the projects, so that we could route it also -->
-
 <div id="projects" class="custom-container">
-  <!-- <h1><i class="fas fa-laptop-code"></i> Projects Anri hasn't messed up</h1> -->
 
   <div>
     <h3 class="custom-header">Web/App development</h3>
 
-    <div class="project">
-      <div class="project-content container">
-        <h5>Website and Blog</h5>
-        <div class="row">
-          <div class="col">
-            image
-          </div>
-          <div class="col">
-            <strong>Date:</strong> January 2022<br>
-            <hr class="dotted">
-            <strong>Project Summary:</strong> A personal website with the core purpose of
-            sharing learnings to be useful in a small way. It has the added benefit of posing as
-            an online resume in addition to an easy portal for feedback, showing proof of concept,
-            and attracting curious friends.<br>
-            <hr class="dotted">
-            <strong>Skill Summary: </strong> Angular framework, SEO optimization, SCSS,
-            web-optimization (reducing Javascript, decreasing file size, cacheing), json <br>
-            <!-- <hr class="dotted"> -->
-            <!-- TODO: Blog, website, and github links -->
-            <!-- <a [routerLink]="['/routePath', blog]" routerLinkActive="router-link-active" >Blog</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr class="dashed">
-
-    <div class="project">
-      <div class="project-content container">
-        <h5>Website with Animation</h5>
-        <div class="row">
-          <div class="col">
-            image
-          </div>
-          <div class="col">
-            <strong>Date:</strong> April 2021<br>
-            <hr class="dotted">
-            <strong>Project Summary:</strong> A personal website with the core purpose of
-            sharing learnings to be useful in a small way. It has the added benefit of posing as
-            an online resume in addition to an easy portal for feedback, showing proof of concept,
-            and attracting curious friends.<br>
-            <hr class="dotted">
-            <strong>Skill Summary: </strong> Angular framework, SEO optimization, SCSS,
-            web-optimization (reducing Javascript, decreasing file size, cacheing), json
+    <div *ngFor="let pr of Projects">
+      <div class="project">
+        <div class="project-content container">
+          <h5>{{pr.title}}</h5>
+          <div class="row">
+            <div class="col">
+              {{pr.imagePath}}
+            </div>
+            <div class="col">
+              <strong>Date:</strong> {{pr.date}}<br>
+              <hr class="dotted">
+              <strong>Project Summary:</strong> {{pr.projectSummary}}.<br>
+              <hr class="dotted">
+              <strong>Skill Summary: </strong> {{pr.skillSummary}} <br>
+              <!-- <hr class="dotted"> -->
+              <!-- TODO: Blog, website, and github links -->
+              <!-- <a [routerLink]="['/routePath', blog]" routerLinkActive="router-link-active" >Blog</a> -->
+            </div>
           </div>
         </div>
       </div>
 
-      <hr class="rounded">
+      <hr class="dashed">
     </div>
+
+
   </div>
 
 
@@ -63,11 +36,60 @@
 
   <div>
     <h3 class="custom-header">Game development</h3>
-    <p>Here are a few</p>
+
+    <div *ngFor="let pr of Projects">
+      <div class="project">
+        <div class="project-content container">
+          <h5>{{pr.title}}</h5>
+          <div class="row">
+            <div class="col">
+              {{pr.imagePath}}
+            </div>
+            <div class="col">
+              <strong>Date:</strong> {{pr.date}}<br>
+              <hr class="dotted">
+              <strong>Project Summary:</strong> {{pr.projectSummary}}.<br>
+              <hr class="dotted">
+              <strong>Skill Summary: </strong> {{pr.skillSummary}} <br>
+              <!-- <hr class="dotted"> -->
+              <!-- TODO: Blog, website, and github links -->
+              <!-- <a [routerLink]="['/routePath', blog]" routerLinkActive="router-link-active" >Blog</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="dashed">
+    </div>
+
   </div>
 
   <div>
     <h3 class="custom-header">Machine learning</h3>
-    <p>Here are a few</p>
+
+    <div *ngFor="let pr of Projects">
+      <div class="project">
+        <div class="project-content container">
+          <h5>{{pr.title}}</h5>
+          <div class="row">
+            <div class="col">
+              {{pr.imagePath}}
+            </div>
+            <div class="col">
+              <strong>Date:</strong> {{pr.date}}<br>
+              <hr class="dotted">
+              <strong>Project Summary:</strong> {{pr.projectSummary}}.<br>
+              <hr class="dotted">
+              <strong>Skill Summary: </strong> {{pr.skillSummary}} <br>
+              <!-- <hr class="dotted"> -->
+              <!-- TODO: Blog, website, and github links -->
+              <!-- <a [routerLink]="['/routePath', blog]" routerLinkActive="router-link-active" >Blog</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="dashed">
+    </div>
   </div>
 </div>
