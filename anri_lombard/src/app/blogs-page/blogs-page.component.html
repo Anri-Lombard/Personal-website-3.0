@@ -32,15 +32,24 @@
   </div>
 
   <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center">
-      <li class="page-item disabled">
-        <a class="page-link">Previous</a>
+    <ul class="pagination justify-content-center pagination-circle">
+      <li class="page-item" [ngClass]="activePageNumber === 1 ? 'disabled' : ''">
+        <a class="page-link" aria-label="Previous" (click)="pageActive(activePageNumber-1)">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
       </li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item active"><a class="page-link" href="#">2</a></li>
-      <li class="page-item active"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Next</a>
+      <li *ngFor="let page of Pages">
+        <div>
+          <li class="page-item" [ngClass]="activePageNumber === page.pageNr ? 'active' : ''"><a class="page-link" (click)="pageActive(page.pageNr)">{{page.pageNr}}</a>
+        </div>
+      </li>
+      <!-- <li class="page-item"><a class="page-link" href="#" (click)="pageActive(1)">1</a></li>
+      <li class="page-item"><a class="page-link" href="#" (click)="pageActive(2)">2</a></li>
+      <li class="page-item"><a class="page-link" href="#" (click)="pageActive(3)">3</a></li> -->
+      <li class="page-item" [ngClass]="activePageNumber === maxPages ? 'disabled' : ''">
+        <a class="page-link" aria-label="Next" (click)="pageActive(activePageNumber+1)">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
       </li>
     </ul>
   </nav>
