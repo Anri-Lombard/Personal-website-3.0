@@ -12,6 +12,7 @@ import { BlogExpandedComponent } from './blog-expanded/blog-expanded.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { NgbPaginationModule, NgbAlertModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,10 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbPaginationModule,
+    NgbAlertModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

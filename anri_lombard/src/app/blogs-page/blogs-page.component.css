@@ -2,4 +2,10 @@
 body {
   position: relative;
 }
+
+.custom-alignment {
+  width: 50vw;
+  height: 70vh;
+  margin: auto;
+}
 /*# sourceMappingURL=blogs-page.component.css.map */

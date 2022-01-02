@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import paginationJson from '../../assets/pagination.json';
 
 interface IPagination {
   pageNr: number;
@@ -11,11 +10,6 @@ interface IPagination {
   styleUrls: ['./blogs-page.component.scss']
 })
 export class BlogsPageComponent implements OnInit {
-
-  activePageNumber = 1;
-  maxPages = paginationJson.length;
-
-  Pages: IPagination[] = paginationJson;
 
 
 
@@ -35,10 +29,6 @@ export class BlogsPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-
-  pageActive(pageNr: number) {
-    this.activePageNumber = pageNr;
   }
 
 }
