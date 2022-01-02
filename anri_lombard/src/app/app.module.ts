@@ -7,7 +7,6 @@ import { BlogsPageComponent } from './blogs-page/blogs-page.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { BlogExpandedComponent } from './blog-expanded/blog-expanded.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -20,7 +19,6 @@ import { NgbPaginationModule, NgbAlertModule, NgbModule } from '@ng-bootstrap/ng
     BlogsPageComponent,
     TopBarComponent,
     FooterComponent,
-    ProjectDetailsComponent,
     BlogExpandedComponent,
     ProjectsPageComponent
   ],

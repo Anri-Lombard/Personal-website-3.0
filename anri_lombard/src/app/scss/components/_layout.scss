@@ -35,6 +35,15 @@
   &:hover {
     margin-left: 3rem;
   }
+
+  &-2 {
+    margin-left: 2rem;
+    transition: .5s ease-in-out;
+
+    &:hover {
+      margin-left: 3rem;
+    }
+  }
 }
 
 .sub-heading {
