@@ -31,8 +31,9 @@ export class BlogsPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  inView(element: any) {
-    element.scrollIntoView({behaviour: "smooth", block: "start", inline: "start"})
+  scrollToElement($element): void {
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
 }
