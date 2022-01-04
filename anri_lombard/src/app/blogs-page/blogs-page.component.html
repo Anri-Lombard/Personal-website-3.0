@@ -1,10 +1,19 @@
 <!-- TODO: create an ngfor -->
 
 <div id="blogs" class="custom-container">
-  <!-- <h1><i class="fa fa-book fa-sm"></i> Blogs by Anri</h1> -->
+
+  <h3>Contents</h3>
+  <div>
+    <div>
+      <p>
+        <a (click)="scrollToElement(AIE)" class="paragraph">AI Ethics</a><br>
+        <a class="paragraph-2">Robot Teachers</a> 2021<br>
+      </p>
+    </div>
+  </div>
 
   <div>
-    <h3 class="custom-header">AI Ethics</h3>
+    <h3 #AIE class="custom-header">AI Ethics</h3>
     <p>These are a few blogs on AI ethics</p>
   </div>
 
@@ -30,27 +39,4 @@
     <h3 class="custom-header">Books</h3>
     <p>Interesting reviews on good books</p>
   </div>
-
-  <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center pagination-circle">
-      <li class="page-item" [ngClass]="activePageNumber === 1 ? 'disabled' : ''">
-        <a class="page-link" aria-label="Previous" (click)="pageActive(activePageNumber-1)">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li *ngFor="let page of Pages">
-        <div>
-          <li class="page-item" [ngClass]="activePageNumber === page.pageNr ? 'active' : ''"><a class="page-link" (click)="pageActive(page.pageNr)">{{page.pageNr}}</a>
-        </div>
-      </li>
-      <!-- <li class="page-item"><a class="page-link" href="#" (click)="pageActive(1)">1</a></li>
-      <li class="page-item"><a class="page-link" href="#" (click)="pageActive(2)">2</a></li>
-      <li class="page-item"><a class="page-link" href="#" (click)="pageActive(3)">3</a></li> -->
-      <li class="page-item" [ngClass]="activePageNumber === maxPages ? 'disabled' : ''">
-        <a class="page-link" aria-label="Next" (click)="pageActive(activePageNumber+1)">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
 </div>

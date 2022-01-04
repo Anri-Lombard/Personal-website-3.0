@@ -29,8 +29,17 @@
 }
 
 .paragraph {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   transition: .5s ease-in-out;
+
+  &-2 {
+    margin-left: 1rem;
+    transition: 1s ease-in-out;
+
+    &:hover {
+      margin-left: 3.5rem;
+    }
+  }
 
   &:hover {
     margin-left: 3rem;
