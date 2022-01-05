@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "Books",
+    "date": "January 2022",
+    "heading": "Atomic Habits",
+    "description": "How big change is only for movies and the secret to Andrew Ng's success. Yes, I am obsessed with the man."
+  },
+  {
+    "id": 2,
+    "type": "Books",
+    "date": "January 2022",
+    "heading": "Best Books of 2021",
+    "description": "(1) Hail Marry, (2) Mastery, (3) The War of Art, (4) The Defining Decade, (5) Atomic Habits"
+  },
+  {
+    "id": 3,
+    "type": "Ethics",
+    "date": "October 2021",
+    "heading": "Robot Teachers",
+    "description": "Robot Teachers are great for niche purposes, but not to replace the complex functions human teachers can provide, yet."
+  },
+  {
+    "id": 4,
+    "type": "Climate",
+    "date": "February 2021",
+    "heading": "Avoiding a Climate Disaster",
+    "description": "There are 2 magic numbers: 50 million and 0. This masterpiece is free to any college students"
+  }
+]

@@ -1,6 +1,10 @@
 @use '../scss/components/layout' as layout;
-body {
-  position: relative;
+@use '../scss/abstracts/custom_variables' as *;
+.custom-blogs {
+  background-color: .custom-blogs -images;
+  background-color-width: 80%;
+  background-color-height: 90%;
+  background-color-align-items: center;
 }
 
 .custom-alignment {

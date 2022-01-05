@@ -1,8 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+<<<<<<< HEAD
 
 interface IPagination {
   pageNr: number;
+=======
+import blogJson from '../../assets/blogs.json';
+
+interface IBlogs {
+  id: number;
+  type: string;
+  date: string;
+  heading: string;
+  description: string;
+>>>>>>> blogs
 }
 @Component({
   selector: 'app-blogs-page',
@@ -11,7 +22,11 @@ interface IPagination {
 })
 export class BlogsPageComponent implements OnInit {
 
+<<<<<<< HEAD
 
+=======
+  Blogs: IBlogs[] = blogJson;
+>>>>>>> blogs
 
   constructor(
     private meta: Meta,
@@ -31,7 +46,11 @@ export class BlogsPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+<<<<<<< HEAD
   scrollToElement($element): void {
+=======
+  scrollToElement($element: any): void {
+>>>>>>> blogs
     console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }

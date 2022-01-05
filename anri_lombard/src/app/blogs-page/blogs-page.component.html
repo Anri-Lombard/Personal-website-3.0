@@ -1,46 +1,104 @@
 <!-- TODO: create an ngfor -->
 
 <div id="blogs" class="custom-container">
-  <!-- <h1><i class="fa fa-book fa-sm"></i> Blogs by Anri</h1> -->
 
+<<<<<<< HEAD
   <h3>Contents</h3>
   <div>
     <div>
       <p>
         <a pageScroll href="#AIE" class="paragraph">AI Ethics</a><br>
         <a pageScroll href="#AIE-RT" class="paragraph-2">Robot Teachers</a> 2021<br>
+=======
+  <!-- <h3>Contents</h3>
+  <div>
+    <div>
+      <p>
+        <a (click)="scrollToElement(AIE)" class="paragraph">AI Ethics</a><br>
+        <a class="paragraph-2">Robot Teachers</a> 2021<br>
+>>>>>>> blogs
       </p>
     </div>
   </div>
 
+<<<<<<< HEAD
   <div>
     <h3 id="AIE" class="custom-header">AI Ethics</h3>
     <p id="AIE-RT">These are a few blogs on AI ethics</p>
+=======
+  <hr class="solid"> -->
+
+  <div>
+    <h3 #AIE class="custom-header">AI Ethics</h3>
+
+    <hr class="solid">
+
+    <div class='d-flex align-content-stretch justify-content-center flex-wrap'>
+      <div *ngFor="let blog of Blogs">
+        <div *ngIf="blog.type=='Ethics'" class="m-1 flex-item custom-blogs">
+          <div>
+            <i class="fas fa-robot"></i>
+          </div>
+          <div>
+            <h6>{{blog.heading}}</h6>
+            <em>{{blog.date}}</em><br>
+            <hr class="dotted">
+            <p>
+              {{blog.description}}
+            </p>
+          </div>
+
+      </div>
+    </div>
+
+>>>>>>> blogs
   </div>
 
   <div>
     <h3 class="custom-header">Climate Change</h3>
-    <p>This is how AI could contribute to protecting out climate: GANS</p>
+
+    <hr class="solid">
+
+    <div class='d-flex align-content-stretch justify-content-center flex-wrap'>
+      <div *ngFor="let blog of Blogs">
+        <div *ngIf="blog.type=='Climate'" class="m-1 flex-item custom-blogs">
+          <div>
+            <i class="fas fa-globe-africa"></i>
+          </div>
+          <div>
+            <h6>{{blog.heading}}</h6>
+            <em>{{blog.date}}</em><br>
+            <hr class="dotted">
+            <p>
+              {{blog.description}}
+            </p>
+          </div>
+
+      </div>
+    </div>
+
   </div>
 
   <div>
     <h3 class="custom-header">Virtual Education</h3>
-    <p>The direction metaverse could go: put a harvard in every pocket, college will be useless</p>
-    <br>
-    <h3 class="custom-header">Neuralink and school</h3>
-    <p>How much will school be needed if everything could be downloaded?</p>
+
+    <hr class="solid">
+
+    <p>Coming Soon</p>
   </div>
 
   <div>
     <h3 class="custom-header">Space Exploration</h3>
-    <p>AI and rockets</p>
+
+    <hr class="solid">
+
+    <p>Coming Soon</p>
   </div>
 
   <div>
     <h3 class="custom-header">Books</h3>
-    <p>Interesting reviews on good books</p>
-  </div>
 
+<<<<<<< HEAD
   <!-- <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center pagination-circle">
       <li class="page-item" [ngClass]="activePageNumber === 1 ? 'disabled' : ''">
@@ -60,4 +118,26 @@
       </li>
     </ul>
   </nav> -->
+=======
+    <hr class="solid">
+
+    <div class='d-flex align-content-stretch justify-content-center flex-wrap'>
+      <div *ngFor="let blog of Blogs">
+        <div *ngIf="blog.type=='Books'" class="m-1 flex-item custom-blogs">
+          <div>
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <div>
+            <h6>{{blog.heading}}</h6>
+            <em>{{blog.date}}</em><br>
+            <hr class="dotted">
+            <p>
+              {{blog.description}}
+            </p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+>>>>>>> blogs
 </div>

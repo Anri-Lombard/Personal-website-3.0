@@ -29,8 +29,17 @@
 }
 
 .paragraph {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   transition: .5s ease-in-out;
+
+  &-2 {
+    margin-left: 1rem;
+    transition: 1s ease-in-out;
+
+    &:hover {
+      margin-left: 3.5rem;
+    }
+  }
 
   &:hover {
     margin-left: 3rem;
@@ -53,20 +62,24 @@
 /* Dashed border */
 hr.dashed {
   border-top: 3px dashed #bbb;
+  max-width: 80vw;
 }
 
 /* Dotted border */
 hr.dotted {
   border-top: 3px dotted #bbb;
+  max-width: 80vw;
 }
 
 /* Solid border */
 hr.solid {
   border-top: 3px solid #bbb;
+  max-width: 80vw;
 }
 
 /* Rounded border */
 hr.rounded {
   border-top: 8px solid #bbb;
+  max-width: 80vw;
   border-radius: 5px;
 }
