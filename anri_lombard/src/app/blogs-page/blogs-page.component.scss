@@ -1,1 +1,19 @@
 @use '../scss/components/layout' as layout;
+@use '../scss/abstracts/custom_variables' as *;
+
+
+.custom-blogs {
+  background: $gray-200;
+  width: 15rem;
+  min-height: 10rem;
+  max-height: 20rem;
+  padding: 1rem;
+
+  border-radius: 5%;
+  border: 1px solid;
+  border-color: $gray-200;
+
+  &:hover {
+    border-color: $blue-400;
+  }
+}

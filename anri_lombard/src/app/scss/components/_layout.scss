@@ -53,20 +53,24 @@
 /* Dashed border */
 hr.dashed {
   border-top: 3px dashed #bbb;
+  max-width: 80vw;
 }
 
 /* Dotted border */
 hr.dotted {
   border-top: 3px dotted #bbb;
+  max-width: 80vw;
 }
 
 /* Solid border */
 hr.solid {
   border-top: 3px solid #bbb;
+  max-width: 80vw;
 }
 
 /* Rounded border */
 hr.rounded {
   border-top: 8px solid #bbb;
+  max-width: 80vw;
   border-radius: 5px;
 }

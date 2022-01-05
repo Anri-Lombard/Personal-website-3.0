@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import blogJson from '../../assets/blogs.json';
 
-interface IPagination {
-  pageNr: number;
+interface IBlogs {
+  id: number;
+  type: string;
+  date: string;
+  heading: string;
+  description: string;
 }
 @Component({
   selector: 'app-blogs-page',
@@ -11,7 +16,7 @@ interface IPagination {
 })
 export class BlogsPageComponent implements OnInit {
 
-
+  Blogs: IBlogs[] = blogJson;
 
   constructor(
     private meta: Meta,
