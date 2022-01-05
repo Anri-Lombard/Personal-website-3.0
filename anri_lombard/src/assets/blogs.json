@@ -33,5 +33,19 @@
     "date": "February 2021",
     "heading": "CRIPR Gene Editing",
     "description": "Yuval Harari describes how humans solve problems, but never stop there. Once we solve enough problems with gene editing, just like with AI, we will start merging with it and make it part of our daily lives."
+  },
+  {
+    "id": 6,
+    "type": "HumanAI",
+    "date": "December 2021",
+    "heading": "ML in Wonderland",
+    "description": "Machine Learning is the frontier of AI right now, and has been for roughly a decade; so after hundreds of hours' worth of courses, books, and reading research, here is a freshman perspective on why machine learning is more magical than most of us think."
+  },
+  {
+    "id": 7,
+    "type": "Space",
+    "date": "January 2022",
+    "heading": "Musk Bezos Branson",
+    "description": "If Alan Turing, Albert Einstein, Isaac Newton, Benjamin Franklin, or any revered legend were alive today they will be in awe of the heroes we have. These risk-takers will dance across many pages of history, so it is only fair to garner inspiration from the seeds they plant."
   }
 ]

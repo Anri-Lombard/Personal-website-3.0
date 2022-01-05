@@ -20,3 +20,16 @@ $navbar-padding-x:                  $spacer * 3;
 .bg-custom {
   background-color: $blue-500;
 }
+
+.nav-item{
+  transition: 1s;
+  border: 2px dashed;
+  border-color: $primary;
+  border-radius: 5%;
+
+  &:hover {
+    border: 1px solid;
+    border-color: white;
+    border-radius: 5%;
+  }
+}

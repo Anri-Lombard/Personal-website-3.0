@@ -4,8 +4,21 @@
 .project {
   background-color: $primary;
   color: $white;
+  transition: 0.5s ease-in-out;
+  border: 1px solid;
+  border-color: $primary;
 
   &-content {
     padding: 1rem;
   }
+
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+
+.custom-image {
+  width: 100%;
+  height: 100%;
 }

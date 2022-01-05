@@ -2,17 +2,15 @@
 
 <div id="blogs" class="custom-container">
 
-  <!-- <h3>Contents</h3>
-  <div>
-    <div>
-      <p>
-        <a (click)="scrollToElement(AIE)" class="paragraph">AI Ethics</a><br>
-        <a class="paragraph-2">Robot Teachers</a> 2021<br>
-      </p>
-    </div>
-  </div>
+  <h3 class="custom-header">Writing</h3>
+  <p class="paragraph">
+    These include ever-more academic papers, blogs about my interests, project descriptions, learnings and reviews
+    of thought provoking books.
+  </p>
+  <p class="paragraph">
+    <strong>As of Jan 2022 this is still in production, but will include thoroughly written articles soon.</strong>
+  </p>
 
-  <hr class="solid"> -->
 
   <div>
     <h3 #AIE class="custom-header">AI Ethics</h3>
@@ -94,7 +92,24 @@
 
     <hr class="solid">
 
-    <p>Coming Soon</p>
+    <div class='d-flex align-content-stretch justify-content-center flex-wrap'>
+      <div *ngFor="let blog of Blogs">
+        <div *ngIf="blog.type=='Space'" class="m-1 flex-item custom-blogs">
+          <div>
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <div>
+            <h6>{{blog.heading}}</h6>
+            <em>{{blog.date}}</em><br>
+            <hr class="dotted">
+            <p>
+              {{blog.description}}
+            </p>
+          </div>
+
+      </div>
+    </div>
+
   </div>
 
   <div>
