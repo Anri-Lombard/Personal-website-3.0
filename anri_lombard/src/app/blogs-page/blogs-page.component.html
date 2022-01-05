@@ -65,11 +65,28 @@
   </div>
 
   <div>
-    <h3 class="custom-header">Virtual Education</h3>
+    <h3 class="custom-header">Human-AI integration</h3>
 
     <hr class="solid">
 
-    <p>Coming Soon</p>
+    <div class='d-flex align-content-stretch justify-content-center flex-wrap'>
+      <div *ngFor="let blog of Blogs">
+        <div *ngIf="blog.type=='HumanAI'" class="m-1 flex-item custom-blogs">
+          <div>
+            <i class="fas fa-globe-africa"></i>
+          </div>
+          <div>
+            <h6>{{blog.heading}}</h6>
+            <em>{{blog.date}}</em><br>
+            <hr class="dotted">
+            <p>
+              {{blog.description}}
+            </p>
+          </div>
+      </div>
+    </div>
+
+
   </div>
 
   <div>

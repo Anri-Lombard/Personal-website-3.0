@@ -27,7 +27,7 @@ export class BlogsPageComponent implements OnInit {
       {name: 'author', content: 'Anri Lombard'},
       {name: 'keywords', content: 'Anri Lombard, blog'}
     ]);
-    this.setTitle('Blogs')
+    this.setTitle('Writing')
   }
   public setTitle(newTitle: string) {
     this.title.setTitle(newTitle);
