@@ -8,7 +8,7 @@ declare var particlesJS: any;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'anri_lombard';
+  title = 'Anri Lombard';
 
   ngOnInit() {
     particlesJS.load('particles-js', '../assets/particles.json', null);
