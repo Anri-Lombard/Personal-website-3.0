@@ -11,7 +11,7 @@
     "type": "Books",
     "date": "January 2022",
     "heading": "Best Books of 2021",
-    "description": "(1) Hail Marry, (2) Mastery, (3) The War of Art, (4) The Defining Decade, (5) Atomic Habits"
+    "description": "(1) Hail Marry, (2) Mastery, (3) The War of Art, (4) The Defining Decade, (5) Atomic Habits."
   },
   {
     "id": 3,
@@ -25,6 +25,13 @@
     "type": "Climate",
     "date": "February 2021",
     "heading": "Avoiding a Climate Disaster",
-    "description": "There are 2 magic numbers: 50 million and 0. This masterpiece is free to any college students"
+    "description": "There are 2 magic numbers: 50 million and 0. This masterpiece is free to any college students."
+  },
+  {
+    "id": 5,
+    "type": "HumanAI",
+    "date": "February 2021",
+    "heading": "CRIPR Gene Editing",
+    "description": "Yuval Harari describes how humans solve problems, but never stop there. Once we solve enough problems with gene editing, just like with AI, we will start merging with it and make it part of our daily lives."
   }
 ]
