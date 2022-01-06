@@ -19,7 +19,7 @@ export class AboutPageComponent implements OnInit {
         {name: 'author', content: 'Anri Lombard'},
         {name: 'keywords', content: 'Anri Lombard, about, experience'}
       ]);
-      this.setTitle('About Page')
+      this.setTitle('About')
     }
     public setTitle(newTitle: string) {
       this.title.setTitle(newTitle);

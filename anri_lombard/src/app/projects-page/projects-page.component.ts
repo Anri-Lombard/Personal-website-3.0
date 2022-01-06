@@ -26,14 +26,13 @@ export class ProjectsPageComponent implements OnInit {
     private meta: Meta,
     private title: Title,
   ) {
-    console.log(this.Projects);
 
     this.meta.addTags([
       {name: 'description', content: 'The projects of Anri Lombard'},
       {name: 'author', content: 'Anri Lombard'},
       {name: 'keywords', content: 'Anri Lombard, projects'}
     ]);
-    this.setTitle('Project Page')
+    this.setTitle('Projects')
   }
   public setTitle(newTitle: string) {
     this.title.setTitle(newTitle);

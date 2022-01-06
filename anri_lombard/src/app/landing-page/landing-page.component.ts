@@ -19,7 +19,7 @@ export class LandingPageComponent implements OnInit {
       {name: 'author', content: 'Anri Lombard'},
       {name: 'keywords', content: 'Anri Lombard, UCT'}
     ]);
-    this.setTitle('Home Page')
+    this.setTitle('Home')
   }
   public setTitle(newTitle: string) {
     this.title.setTitle(newTitle);
