@@ -3,6 +3,11 @@ import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 declare var particlesJS: any;
+
+interface cachedImage {
+  url: string;
+  blob: Blob;
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
