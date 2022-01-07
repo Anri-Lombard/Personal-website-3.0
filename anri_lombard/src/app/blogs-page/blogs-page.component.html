@@ -5,7 +5,7 @@
   <h3 class="custom-header">Writing</h3>
   <p class="paragraph">
     These include ever-more academic papers, blogs about my interests, project descriptions, learnings and reviews
-    of thought provoking books.
+    of thought provoking books. Feel free to click on "Explore More" to read further.
   </p>
 
 
@@ -27,9 +27,8 @@
             <p>
               {{blog.description}}
             </p>
-            <p>
-              <a (click)="gotoPage(blog.id)">Explore More</a>
-            </p>
+            <hr class="dotted">
+            <a class="custom-anchor" (click)="gotoPage(blog.id)">Explore More</a>
           </div>
 
       </div>
