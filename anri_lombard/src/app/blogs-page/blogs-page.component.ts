@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import blogJson from '../../assets/blogs.json';
+import { Router } from '@angular/router';
 
 interface IBlogs {
-  id: number;
+  id: string;
   type: string;
   date: string;
   heading: string;
@@ -21,6 +22,7 @@ export class BlogsPageComponent implements OnInit {
   constructor(
     private meta: Meta,
     private title: Title,
+    private router: Router,
   ) {
     this.meta.addTags([
       {name: 'description', content: 'The blog of Anri Lombard'},
@@ -39,6 +41,10 @@ export class BlogsPageComponent implements OnInit {
   scrollToElement($element: any): void {
     console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
+  gotoPage($id: string) {
+    this.router.navigate(['/blogs/', +$id]);
   }
 
 }

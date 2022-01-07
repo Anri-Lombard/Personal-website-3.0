@@ -1,1 +1,15 @@
-<p>blog-expanded works!</p>
+<div class="custom-container">
+  <div *ngFor="let blog of Blogs">
+    <div *ngIf="blog.id === blogId">
+      <h1>{{blog.heading}}.pdf</h1>
+      <ngx-extended-pdf-viewer
+        [src]="pdfSrc"
+        [height]="'90vh'"
+        [useBrowserLocale]="true"
+        zoom="90%"
+      >
+      </ngx-extended-pdf-viewer>
+    </div>
+  </div>
+
+</div>

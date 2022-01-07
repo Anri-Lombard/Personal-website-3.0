@@ -7,9 +7,6 @@
     These include ever-more academic papers, blogs about my interests, project descriptions, learnings and reviews
     of thought provoking books.
   </p>
-  <p class="paragraph">
-    <strong>As of Jan 2022 this is still in production, but will include thoroughly written articles soon.</strong>
-  </p>
 
 
   <div>
@@ -29,6 +26,9 @@
             <hr class="dotted">
             <p>
               {{blog.description}}
+            </p>
+            <p>
+              <a (click)="gotoPage(blog.id)">Explore More</a>
             </p>
           </div>
 

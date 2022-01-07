@@ -1,48 +1,48 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "type": "Books",
     "date": "January 2022",
     "heading": "Atomic Habits",
     "description": "How big change is only for movies and the secret to Andrew Ng's success. Yes, I am obsessed with the man."
   },
   {
-    "id": 2,
+    "id": "2",
     "type": "Books",
     "date": "January 2022",
     "heading": "Best Books of 2021",
     "description": "(1) Hail Marry, (2) Mastery, (3) The War of Art, (4) The Defining Decade, (5) Atomic Habits"
   },
   {
-    "id": 3,
+    "id": "3",
     "type": "Ethics",
     "date": "October 2021",
     "heading": "Robot Teachers",
     "description": "Robot Teachers are great for niche purposes, but not to replace the complex functions human teachers can provide, yet."
   },
   {
-    "id": 4,
+    "id": "4",
     "type": "Climate",
     "date": "February 2021",
     "heading": "Avoiding a Climate Disaster",
     "description": "There are 2 magic numbers: 50 million and 0. This masterpiece is free to any college students."
   },
   {
-    "id": 5,
+    "id": "5",
     "type": "HumanAI",
     "date": "February 2021",
     "heading": "CRIPR Gene Editing",
     "description": "Yuval Harari describes how humans solve problems, but never stop there. Once we solve enough problems with gene editing, just like with AI, we will start merging with it and make it part of our daily lives."
   },
   {
-    "id": 6,
+    "id": "6",
     "type": "HumanAI",
     "date": "December 2021",
     "heading": "ML in Wonderland",
     "description": "Machine Learning is the frontier of AI right now, and has been for roughly a decade; so after hundreds of hours' worth of courses, books, and reading research, here is a freshman perspective on why machine learning is more magical than most of us think."
   },
   {
-    "id": 7,
+    "id": "7",
     "type": "Space",
     "date": "January 2022",
     "heading": "Musk Bezos Branson",
