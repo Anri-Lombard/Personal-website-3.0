@@ -1,7 +1,7 @@
 @use '../abstracts/custom_variables' as *;
 
 .custom-container {
-  @include make-container(4rem);
+  @include make-container(1rem);
   padding-top: 2rem;
 }
 
@@ -74,3 +74,10 @@ hr.rounded {
   max-width: 80vw;
   border-radius: 5px;
 }
+
+@media (min-width: 575.98px) {
+  .custom-container {
+    @include make-container(4rem);
+    padding-top: 2rem;
+  }
+ }

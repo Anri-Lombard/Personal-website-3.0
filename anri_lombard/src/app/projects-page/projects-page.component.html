@@ -1,6 +1,6 @@
-<div id="projects" class="custom-container">
+<!-- <div id="projects" class="custom-container"> -->
 
-  <div>
+  <div class="custom-container">
     <h3 class="custom-header">Projects</h3>
     <p class="paragraph">
       I view building and sharing software in the open as a canvas for <em>creative exploration</em>.
@@ -8,18 +8,22 @@
       that could improve people's lives. I welcome collaborations - if any project interests you let me know.
     </p>
   </div>
+
   <div>
-    <h3 class="custom-header">Web/App development</h3>
+    <div class="custom-container">
+
+      <h3 class="custom-header">Web/App development</h3>
+    </div>
 
     <div *ngFor="let pr of Projects">
       <div *ngIf="pr.type === 'WA'" class="project mt-2">
         <div class="project-content container">
           <h5>{{pr.title}}</h5>
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-sm">
               <img class="custom-image" src="{{pr.imagePath}}" alt="{{pr.title}}">
             </div>
-            <div class="col">
+            <div class="col-12 col-sm">
               <strong>Date:</strong> {{pr.date}}<br>
               <hr class="dotted">
               <strong>Project Summary:</strong> {{pr.projectSummary}}<br>
@@ -37,20 +41,25 @@
 
   </div>
 
-  <hr class="solid">
+  <div class="custom-container">
+    <hr class="solid">
+  </div>
 
   <div>
-    <h3 class="custom-header">Game development</h3>
+    <div class="custom-container">
+      <h3 class="custom-header">Game development</h3>
+
+    </div>
 
     <div *ngFor="let pr of Projects">
       <div *ngIf="pr.type === 'GD'" class="project mt-2">
         <div class="project-content container">
           <h5>{{pr.title}}</h5>
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-sm">
               <img class="custom-image" src="{{pr.imagePath}}" alt="{{pr.title}}">
             </div>
-            <div class="col">
+            <div class="col-12 col-sm">
               <strong>Date:</strong> {{pr.date}}<br>
               <hr class="dotted">
               <strong>Project Summary:</strong> {{pr.projectSummary}}.<br>
@@ -68,20 +77,25 @@
 
   </div>
 
-  <hr class="solid">
+  <div class="custom-container">
+    <hr class="solid">
+  </div>
 
   <div>
-    <h3 class="custom-header">Machine learning</h3>
+    <div class="custom-container">
+      <h3 class="custom-header">Machine learning</h3>
+
+    </div>
 
     <div *ngFor="let pr of Projects">
       <div *ngIf="pr.type === 'ML'" class="project mt-2">
         <div class="project-content container">
           <h5>{{pr.title}}</h5>
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-sm">
               <img class="custom-image" src="{{pr.imagePath}}" alt="{{pr.title}}">
             </div>
-            <div class="col">
+            <div class="col-12 col-sm">
               <strong>Date:</strong> {{pr.date}}<br>
               <hr class="dotted">
               <strong>Project Summary:</strong> {{pr.projectSummary}}.<br>
@@ -96,4 +110,4 @@
       </div>
     </div>
   </div>
-</div>
+<!-- </div> -->
