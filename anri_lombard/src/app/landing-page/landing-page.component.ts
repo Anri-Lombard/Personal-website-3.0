@@ -9,23 +9,21 @@ import { Router } from '@angular/router';
 })
 export class LandingPageComponent implements OnInit {
 
+  title = "Summary";
+
   constructor(
     private meta: Meta,
-    private title: Title,
+    private titleService: Title,
     private router: Router,
   ) {
-    this.meta.addTags([
-      {name: 'description', content: 'The personal website of Anri Lombard'},
-      {name: 'author', content: 'Anri Lombard'},
-      {name: 'keywords', content: 'Anri Lombard, UCT'}
-    ]);
-    this.setTitle('Home')
-  }
-  public setTitle(newTitle: string) {
-    this.title.setTitle(newTitle);
+
   }
 
   ngOnInit(): void {
+    this.meta.updateTag(
+      {name: 'description', content: 'Navigate to Resume, Projects, and Writings'}
+    );
+    this.titleService.setTitle(this.title);
   }
 
   // TODO: add these gotos to a cart for the entire website to use

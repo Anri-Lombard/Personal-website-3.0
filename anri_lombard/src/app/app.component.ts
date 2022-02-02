@@ -17,6 +17,14 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     particlesJS.load('particles-js', '../assets/particles.json', null);
+
+    this.meta.addTags([
+      {name: 'description', content: 'The Personal Website Of Anri Lombard'},
+      {name: 'robots', content: 'Index, follow'},
+      {name: 'author', content: 'Anri Lombard'},
+      {name: 'keywords', content: 'Anri Lombard, personal, website, UCT, Machine Learning, Deeplearning.AI'}
+    ]);
+    this.setTitle('Anri Lombard')
   }
 
   constructor(
@@ -25,12 +33,6 @@ export class AppComponent implements OnInit {
     private router: Router,
   ) {
 
-    this.meta.addTags([
-      {name: 'description', content: 'The Website Of Anri Lombard'},
-      {name: 'author', content: 'Anri Lombard'},
-      {name: 'keywords', content: 'Anri Lombard, personal, website, UCT, Machine Learning, Deeplearning.AI'}
-    ]);
-    this.setTitle('Anri Lombard')
   }
   public setTitle(newTitle: string) {
     this.title.setTitle(newTitle);

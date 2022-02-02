@@ -17,25 +17,23 @@ interface IBlogs {
 })
 export class BlogsPageComponent implements OnInit {
 
+  title = "Writing";
+
   Blogs: IBlogs[] = blogJson;
 
   constructor(
     private meta: Meta,
-    private title: Title,
+    private titleService: Title,
     private router: Router,
   ) {
-    this.meta.addTags([
-      {name: 'description', content: 'The blog of Anri Lombard'},
-      {name: 'author', content: 'Anri Lombard'},
-      {name: 'keywords', content: 'Anri Lombard, blog'}
-    ]);
-    this.setTitle('Writing')
-  }
-  public setTitle(newTitle: string) {
-    this.title.setTitle(newTitle);
+
   }
 
   ngOnInit(): void {
+    this.meta.updateTag(
+      {name: 'description', content: 'Writings about AI Ethics, Climate change technology, Biotechnology, Space exploration technology, and books'}
+    );
+    this.titleService.setTitle(this.title);
   }
 
   scrollToElement($element: any): void {

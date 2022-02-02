@@ -19,26 +19,23 @@ interface IProject {
 })
 export class ProjectsPageComponent implements OnInit {
 
+  title = "Projects";
+
   Projects: IProject[] = projectsJson;
   bullocks = false;
 
   constructor(
     private meta: Meta,
-    private title: Title,
+    private titleService: Title,
   ) {
 
-    this.meta.addTags([
-      {name: 'description', content: 'The projects of Anri Lombard'},
-      {name: 'author', content: 'Anri Lombard'},
-      {name: 'keywords', content: 'Anri Lombard, projects'}
-    ]);
-    this.setTitle('Projects')
-  }
-  public setTitle(newTitle: string) {
-    this.title.setTitle(newTitle);
   }
 
   ngOnInit(): void {
+    this.meta.updateTag(
+      {name: 'description', content: 'Projects based on web/app development, game/VR development, and machine learning'}
+    );
+    this.titleService.setTitle(this.title);
   }
 
 }
