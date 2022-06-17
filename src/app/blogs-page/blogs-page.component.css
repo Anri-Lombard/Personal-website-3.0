@@ -1,9 +1,0 @@
-@use '../scss/components/layout' as layout;
-@use '../scss/abstracts/custom_variables' as *;
-.custom-blogs {
-  background-color: .custom-blogs -images;
-  background-color-width: 80%;
-  background-color-height: 90%;
-  background-color-align-items: center;
-}
-/*# sourceMappingURL=blogs-page.component.css.map */

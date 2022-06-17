@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,IAAI,CAAJ,qCAAI;AACJ,IAAI,CAAJ,yCAAI;AAGJ,AAAA,aAAa,CAAC;EACZ,gBAAgB,EADlB,aAAa,CAEV,OAAO;EACN,sBAAK,EAAE,GAAG;EACV,uBAAM,EAAE,GAAG;EACX,4BAAW,EAAE,MAAM;CAEtB",
-    "sources": [
-        "blogs-page.component.scss"
-    ],
-    "names": [],
-    "file": "blogs-page.component.css"
-}
