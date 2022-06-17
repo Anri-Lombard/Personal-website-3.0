@@ -1,0 +1,79 @@
+@use '../abstracts/custom_variables' as *;
+
+.custom-container {
+  @include make-container(1rem);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.custom-header {
+  color: $blue-900;
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 2rem;
+
+  &:hover {
+    animation: pulse 1s;
+  }
+
+  &-main:hover {
+    animation: pulse 1s;
+  }
+}
+
+.paragraph {
+  transition: 0.5s;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+
+  &-2 {
+    transition: 0.5s;
+
+    &:hover {
+      color: $blue-600;
+    }
+  }
+
+  &:hover {
+    color: $blue-600;
+  }
+}
+
+.sub-heading {
+  transition: 0.5s;
+
+  :hover {
+    color: $blue-600;
+  }
+}
+
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+@media (min-width: 575.98px) {
+  .custom-container {
+    @include make-container(4rem);
+    padding-top: 2rem;
+  }
+ }

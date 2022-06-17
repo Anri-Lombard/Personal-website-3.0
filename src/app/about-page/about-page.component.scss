@@ -1,0 +1,8 @@
+@use '../scss/abstracts/custom_variables' as *;
+@use '../scss/components/layout' as layout;
+@use '../projects-page/projects-page.component.scss' as projectStyle;
+
+a {
+  text-decoration: none;
+  color: $primary;
+}

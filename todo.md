@@ -1,0 +1,4 @@
+- TODO: Adds in blog?
+- TODO: Add user authentication
+- TODO: Add Animations
+- TODO: Add games to play with friends online

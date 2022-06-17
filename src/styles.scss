@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Importing Bootstrap SCSS file. */
+@forward '~bootstrap/scss/bootstrap';
+@use '~bootstrap/scss/bootstrap' as *;
+
+* {
+  // font-family: 'Licorice', cursive;
+  // font-size: large;
+}
+
+html, body { height: 100%; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Fascinate', cursive; }
+body { margin: 0; font-family: 'Rajdhani', sans-serif; font-size: 1.2rem}

@@ -1,0 +1,37 @@
+@use '../scss/components/layout' as layout;
+@use '../scss//abstracts/custom_variables' as *;
+
+.project {
+  background-color: $primary;
+  color: $white;
+  transition: 0.5s ease-in-out;
+  border: 1px solid;
+  border-color: $primary;
+  margin: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+
+  &-content {
+    padding: 1rem;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+
+.custom-image {
+  width: 100%;
+  height: 95%;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+@media (min-width: 575.98px) {
+  .project {
+    margin: 1rem 4rem;
+  }
+ }

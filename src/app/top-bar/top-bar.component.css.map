@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,IAAI,CAAJ,0CAAI",
+    "sources": [
+        "top-bar.component.scss"
+    ],
+    "names": [],
+    "file": "top-bar.component.css"
+}

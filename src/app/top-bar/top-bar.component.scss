@@ -1,0 +1,41 @@
+@use '../scss/abstracts/custom_variables' as *;
+
+$navbar-padding-y:                  $spacer * 1;
+$navbar-padding-x:                  $spacer * 3;
+
+.navbar {
+  padding: $navbar-padding-y/2 $navbar-padding-x/2;
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  // left: 0;
+
+
+  &-brand {
+    font-family: 'Licorice', cursive;
+    font-size: 2rem;
+  }
+}
+
+.bg-custom {
+  background-color: $blue-500;
+}
+
+.nav-item{
+  transition: 1s;
+  border: 2px dashed;
+  border-color: $primary;
+  border-radius: 5%;
+
+  &:hover {
+    border: 1px solid;
+    border-color: white;
+    border-radius: 5%;
+  }
+}
+
+@media (min-width: 575.98px) {
+  .navbar {
+    padding: $navbar-padding-y $navbar-padding-x;
+  }
+ }

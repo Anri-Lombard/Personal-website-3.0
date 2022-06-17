@@ -1,0 +1,121 @@
+<!-- <div id="projects" class="custom-container"> -->
+
+  <div class="custom-container">
+    <h3 class="custom-header">Projects</h3>
+    <p class="paragraph">
+      Looky here!
+    </p>
+  </div>
+
+  <div>
+    <div class="custom-container">
+
+      <h3 class="custom-header">Web/App development</h3>
+    </div>
+
+    <div *ngFor="let pr of Projects">
+      <div *ngIf="pr.type === 'WA'" class="project mt-2">
+        <div class="project-content container">
+          <h5>{{pr.title}}</h5>
+          <div class="row">
+            <div class="col-12 col-sm">
+              <img class="custom-image" src="{{pr.imagePath}}" alt="{{pr.title}}">
+            </div>
+            <div class="col-12 col-sm">
+              <strong>Date:</strong> {{pr.date}}<br>
+              <hr class="dotted">
+              <strong>Project Summary:</strong> {{pr.projectSummary}}<br>
+              <hr class="dotted">
+              <strong>Skill Summary:</strong> {{pr.skillSummary}} <br>
+              <!-- <hr class="dotted"> -->
+              <!-- TODO: Blog, website, and github links -->
+              <!-- <a [routerLink]="['/routePath', blog]" routerLinkActive="router-link-active" >Blog</a> -->
+              <hr class="dotted" *ngIf="pr.hasGitLink || pr.hasWebLink">
+              <a *ngIf="pr.hasGitLink" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-floating m-1" href="{{pr.gitLink}}" role="button"
+              ><i class="fab fa-github"></i></a>
+              <a *ngIf="pr.hasWebLink" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-floating m-1" href="{{pr.webLink}}" role="button"
+              ><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="custom-container">
+    <hr class="solid">
+  </div>
+
+  <div>
+    <div class="custom-container">
+      <h3 class="custom-header">Game development/VR/AR</h3>
+
+    </div>
+
+    <div *ngFor="let pr of Projects">
+      <div *ngIf="pr.type === 'GD'" class="project mt-2">
+        <div class="project-content container">
+          <h5>{{pr.title}}</h5>
+          <div class="row">
+            <div class="col-12 col-sm">
+              <img class="custom-image" src="{{pr.imagePath}}" alt="{{pr.title}}">
+            </div>
+            <div class="col-12 col-sm">
+              <strong>Date:</strong> {{pr.date}}<br>
+              <hr class="dotted">
+              <strong>Project Summary:</strong> {{pr.projectSummary}}<br>
+              <hr class="dotted">
+              <strong>Skill Summary: </strong> {{pr.skillSummary}} <br>
+              <!-- <hr class="dotted"> -->
+              <!-- TODO: Blog, website, and github links -->
+              <!-- <a [routerLink]="['/routePath', blog]" routerLinkActive="router-link-active" >Blog</a> -->
+              <hr class="dotted" *ngIf="pr.hasGitLink || pr.hasWebLink">
+              <a *ngIf="pr.hasGitLink" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-floating m-1" href="{{pr.gitLink}}" role="button"
+              ><i class="fab fa-github"></i></a>
+              <a *ngIf="pr.hasWebLink" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-floating m-1" href="{{pr.webLink}}" role="button"
+              ><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="custom-container">
+    <hr class="solid">
+  </div>
+
+  <div>
+    <div class="custom-container">
+      <h3 class="custom-header">Machine learning</h3>
+
+    </div>
+
+    <div *ngFor="let pr of Projects">
+      <div *ngIf="pr.type === 'ML'" class="project mt-2">
+        <div class="project-content container">
+          <h5>{{pr.title}}</h5>
+          <div class="row">
+            <div class="col-12 col-sm">
+              <img class="custom-image" src="{{pr.imagePath}}" alt="{{pr.title}}">
+            </div>
+            <div class="col-12 col-sm">
+              <strong>Date:</strong> {{pr.date}}<br>
+              <hr class="dotted">
+              <strong>Project Summary:</strong> {{pr.projectSummary}}<br>
+              <hr class="dotted">
+              <strong>Skill Summary: </strong> {{pr.skillSummary}} <br>
+              <!-- <hr class="dotted"> -->
+              <!-- TODO: Blog, website, and github links -->
+              <!-- <a [routerLink]="['/routePath', blog]" routerLinkActive="router-link-active" >Blog</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
