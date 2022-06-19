@@ -21,7 +21,7 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.meta.updateTag(
-      {name: 'description', content: 'I\'m an ex-husband of Queen Elizabeth, olympic gold medalist in rhythmic gymnastics, and hired assasin.'}
+      {name: 'description', content: 'I\'m an ex-husband of Queen Elizabeth, olympic gold medalist in rhythmic gymnastics, and hired assassin.'}
     );
     this.titleService.setTitle(this.title);
   }

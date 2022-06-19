@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
     particlesJS.load('particles-js', '../assets/particles.json', null);
 
     this.meta.addTags([
-      {name: 'description', content: 'The Personal Website Of Anri Lombard. See his resume, portfolio, and writing.'},
       {name: 'robots', content: 'Index, follow'},
       {name: 'author', content: 'Anri Lombard'},
       {name: 'keywords', content: 'Anri Lombard, personal, website, UCT, Machine Learning, Deeplearning.AI, Software Engineer, Researcher, Developer'}
