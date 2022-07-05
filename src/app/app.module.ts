@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
@@ -26,7 +25,6 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
     AppComponent,
     TopBarComponent,
     FooterComponent,
-    ProjectDetailsComponent,
     ProjectsPageComponent
   ],
   imports: [

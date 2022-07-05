@@ -1,5 +1,18 @@
 [
   {
+    "id": 15,
+    "type": "WA",
+    "title": "NodeJS Chat Application",
+    "imagePath": "assets/images/projects/ChitChat.png",
+    "date": "June 2022",
+    "projectSummary": "A chat application that tracks users and rooms, timestamp communication, autoscrolls for a better user experience, doesn't allow the most common profanity, and allows users to share their geolocation with the room they're in.",
+    "skillSummary": "NodeJS, UI/UX, server-side and client-side rendering, NodeJS API's and libraries",
+    "hasGitLink": true,
+    "gitLink": "https://github.com/Anri-Lombard/Chatter",
+    "hasWebLink": true,
+    "webLink": "https://chitter-chatter-all-day.herokuapp.com/"
+  },
+  {
     "id": 14,
     "type": "WA",
     "title": "Personal Website In True Nerd Fashion",
